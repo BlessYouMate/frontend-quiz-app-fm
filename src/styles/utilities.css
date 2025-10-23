@@ -1,0 +1,61 @@
+/* Text Preset 1 */
+
+.text-heading-large-medium{
+    font-size: var(--fs-heading-large);
+    font-weight: var(--font-weight-medium);
+    line-height: 100%;
+}
+
+/* Text Preset 2 */
+
+.text-heading-medium-medium{
+    font-size: var(--fs-heading-medium);
+    font-weight: var(--font-weight-medium);
+    line-height: 100%;
+}
+
+.text-heading-medium-light{
+    font-size: var(--fs-heading-medium);
+    font-weight: var(--font-weight-light);
+    line-height: 100%;
+}
+
+/* Text Preset 3 */
+
+.text-heading-small-medium{
+    font-size: var(--fs-heading-small);
+    font-weight: var(--font-weight-medium);
+    line-height: 120%;
+}
+
+/* Text Preset 4 */
+
+.text-paragraph-large-medium{
+    font-size: var(--fs-paragraph-large);
+    font-weight: var(--font-weight-medium);
+    line-height: 150%;
+}
+
+/* Text Preset 5 */
+
+.text-paragraph-medium-medium{
+    font-size: var(--fs-paragraph-medium);
+    font-weight: var(--font-weight-medium);
+    line-height: 150%;
+}
+
+.text-paragraph-medium-regular{
+    font-size: var(--fs-paragraph-medium);
+    font-weight: var(--font-weight-regular);
+    line-height: 150%;
+}
+
+/* Text Preset 6 */
+
+.text-paragraph-small-italic{
+    font-size: var(--fs-paragraph-small);
+    font-weight: var(--font-weight-light);
+    font-style: italic;
+    line-height: 150%;
+}
+

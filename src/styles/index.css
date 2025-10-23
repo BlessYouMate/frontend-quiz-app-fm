@@ -1,0 +1,59 @@
+@import url("./reset.css");
+@import url("./variables.css");
+@import url("./utilities.css");
+@import url("./components.css");
+
+body{
+    background-color: var(--blue-900);
+    background-image: url("../../public/assets/images/pattern-background-mobile-dark.svg");
+    color: var(--white);
+    font-family: "Rubik", sans-serif;
+    height: 100dvh;
+}
+
+.night-mode-toggle-container{
+    height: 9%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.night-mode-toggle{
+    border: 1px solid green;
+    width: 80px;
+    height: 25px;
+    align-self: flex-end;
+    margin-right: var(--spacing-300);
+}
+
+main > *{
+    width: 87vw;
+    margin: 0 auto;
+}
+
+.header-content{
+    text-align: left;
+    margin-bottom: var(--spacing-500);
+}
+
+.header-content h1{
+    margin-bottom: var(--spacing-100);
+}
+
+.header-content span{
+    margin-bottom: var(--spacing-200);
+    display: block;
+}
+
+.header-content p{
+    color: var(--blue-300);
+}
+
+.quiz-menu ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-200);
+}
