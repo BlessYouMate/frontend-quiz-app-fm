@@ -2,29 +2,36 @@
 @import url("./variables.css");
 @import url("./utilities.css");
 @import url("./components.css");
+@import url("./theme.css");
 
 body{
     background-color: var(--blue-900);
     background-image: url("../../public/assets/images/pattern-background-mobile-dark.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
     color: var(--white);
     font-family: "Rubik", sans-serif;
     height: 100dvh;
+
+    transition: background-color .3s linear, color .3s linear, background-image .3s linear;
 }
 
 .night-mode-toggle-container{
-    height: 9%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    padding: 2.6rem 0;
 }
 
 .night-mode-toggle{
-    border: 1px solid green;
-    width: 80px;
-    height: 25px;
     align-self: flex-end;
-    margin-right: var(--spacing-300);
+    padding-right: 2.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.8rem;
 }
 
 main > *{
@@ -35,6 +42,7 @@ main > *{
 .header-content{
     text-align: left;
     margin-bottom: var(--spacing-500);
+    margin-top: var(--spacing-400);
 }
 
 .header-content h1{
@@ -48,6 +56,8 @@ main > *{
 
 .header-content p{
     color: var(--blue-300);
+
+    transition: color .3s linear;
 }
 
 .quiz-menu ul{
@@ -56,4 +66,63 @@ main > *{
     display: flex;
     flex-direction: column;
     gap: var(--spacing-200);
+}
+
+/* tablet */
+
+@media screen and (min-width: 768px) {
+
+    body{
+        background-image: url("../../public/assets/images/pattern-background-tablet-dark.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .night-mode-toggle-container{
+        padding: 5.4rem 0;
+    }
+
+    .night-mode-toggle{
+        padding-right: 6.4rem;
+
+        gap: 1.6rem;
+    }
+
+}
+
+/* desktop */
+
+@media screen and (min-width: 1440px) {
+
+    body{
+        background-image: url("../../public/assets/images/pattern-background-desktop-dark.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .night-mode-toggle-container{
+        padding-top: 9.7rem;
+        padding-bottom: 9.9rem;
+    }
+
+    .night-mode-toggle{
+        padding-right: 14.3rem;
+    }
+
+    main{
+        width: 80.5%;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .header-content{
+        margin: 0;
+    }
+
+    main > *{
+        width: unset;
+        margin: unset;
+    }
 }

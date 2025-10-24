@@ -17,6 +17,18 @@
     display: flex;
     align-items: center;
     gap: var(--spacing-200);
+
+    box-shadow: 0 var(--spacing-200) var(--spacing-500) hsla(216, 25%, 25%, 0.14);
+
+    cursor: pointer;
+
+    transition: background-color .3s linear, color .3s linear;
+}
+
+.button-with-icon:focus-visible,
+.button-with-icon:hover{
+    outline: 2px solid var(--purple-600);
+    outline-offset: 4px;
 }
 
 .icon{
@@ -46,4 +58,77 @@
     color: var(--purple-600);
 }
 
-/*  */
+/* theme toggle */
+
+/* sr-only */
+.theme-toggle-input { 
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.theme-toggle-input:focus-visible ~ .theme-toggle-fill,
+.theme-toggle-fill:hover{
+    outline: 2px solid var(--purple-600);
+    outline-offset: 4px; 
+    cursor: pointer;
+}
+
+.theme-toggle-fill{
+    position: relative;
+    border-radius: 999px;
+    background-color: var(--purple-600);
+
+    width: 3.2rem;
+    height: 2rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.theme-toggle-fill::before{
+    content: "";
+    position: absolute;
+    top: 0.4rem;
+    left: 0.4rem;
+    width: 1.2rem;
+    height: 1.2rem;
+
+    background-color: var(--white);
+    border-radius: 999px;
+
+    transition: left .3s linear;
+}
+
+.theme-toggle-input:checked ~ .theme-toggle-fill::before{
+    left: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    .theme-toggle-fill{
+        width: 4.8rem;
+        height: 2.8rem;
+    }
+
+    .theme-toggle-fill::before{
+        top: 0.4rem;
+        left: 0.4rem;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .theme-toggle-input:checked ~ .theme-toggle-fill::before{
+        left: 2.4rem;
+    }
+
+    .button-with-icon{
+        width: 100%;
+        padding: var(--spacing-300);
+    }
+}
