@@ -1,12 +1,109 @@
-<!-- Quiz question start -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="../public/assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/question.css">
+  <title>Question</title>
+</head>
+<body>
+  <header>
+    <div class="topic-container">
+      <div class="icon-container">
+        <img src="../public/assets/images/icon-accessibility.svg">
+      </div>
+      <h2 class="text-paragraph-large-medium">Accessibility</h2>  
+    </div>
+      
+    <div class="night-mode-toggle">
+      <svg 
+      class="theme-icon"
+      xmlns="http://www.w3.org/2000/svg" 
+      fill="none" 
+      viewBox="0 0 24 24"
+      >
+        <path 
+        fill="currentColor" 
+        d="M12 1.5a.75.75 0 0 1 .75.75v1.5a.75.75 0 1 1-1.5 0v-1.5A.75.75 0 0 1 12 1.5Zm0 15a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm0-1.5a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm9.75-2.25a.75.75 0 1 0 0-1.5h-1.5a.75.75 0 1 0 0 1.5h1.5ZM12 19.5a.75.75 0 0 1 .75.75v1.5a.75.75 0 1 1-1.5 0v-1.5a.75.75 0 0 1 .75-.75Zm-8.25-6.75a.75.75 0 1 0 0-1.5h-1.5a.75.75 0 1 0 0 1.5h1.5Zm.969-8.031a.75.75 0 0 1 1.062 0l1.5 1.5a.751.751 0 0 1-1.062 1.062l-1.5-1.5a.75.75 0 0 1 0-1.062Zm1.062 14.562a.75.75 0 1 1-1.062-1.06l1.5-1.5a.75.75 0 1 1 1.062 1.06l-1.5 1.5Zm13.5-14.562a.75.75 0 0 0-1.062 0l-1.5 1.5a.751.751 0 0 0 1.062 1.062l1.5-1.5a.75.75 0 0 0 0-1.062Zm-1.062 14.562a.75.75 0 0 0 1.062-1.06l-1.5-1.5a.75.75 0 0 0-1.062 1.06l1.5 1.5Z"
+        />
+      </svg>
+      <label class="theme-toggle-label" for="theme-toggle">
+        <input class="theme-toggle-input" type="checkbox" id="theme-toggle" checked>
+        <div class="theme-toggle-fill"></div>
+      </label>
+    
+      <svg 
+      class="theme-icon"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none" 
+      viewBox="0 0 24 24"
+      >
+        <path 
+        fill="currentColor" 
+        d="M11.775 4.522A7.5 7.5 0 1 1 4.898 16.09c2.104-.57 4.974-1.953 6.24-5.326.828-2.211.876-4.408.637-6.241ZM20.184 12a8.997 8.997 0 0 0-9.315-8.994.75.75 0 0 0-.713.888c.345 1.821.42 4.092-.424 6.342-1.2 3.201-4.203 4.26-6.115 4.606a.75.75 0 0 0-.542 1.066A9 9 0 0 0 20.184 12Z"
+        />
+      </svg>
+    </div>
+  </header>
 
-  Question <!-- number --> of 10
+  <main>
+    <div class="question-wrapper">
+      <section class="question-text">
+        <p class="text-paragraph-small-italic">Question <span class="question-number">6</span> of 10</p>
+        <h1 class="text-heading-small-medium">Which of these color contrast ratios defines the minimum WCAG 2.1 Level AA requirement for normal text?</h1>
+      </section>
+      <div class="progress-bar">
+        <div class="progress-bar-fill"></div>
+      </div>
+    </div>
+    
+    <section class="answers-container">
+      <ul class="text-paragraph-large-medium">
+        <li>
+          <button type="button" class="answer-button">
+            <div class="answer">
+              A
+            </div>
+            <h2 class="text-paragraph-large-medium">3:1</h2>
+          </button>
+        </li>
 
-  A
-  B
-  C
-  D
+        <li>
+          <button type="button" class="answer-button">
+            <div class="answer">
+              B
+            </div>
+            <h2 class="text-paragraph-large-medium">4.5:1</h2>
+          </button>
+        </li>
 
-  Submit answer
+        <li>
+          <button type="button" class="answer-button">
+            <div class="answer">
+              C
+            </div>
+            <h2 class="text-paragraph-large-medium">7:1</h2>
+          </button>
+        </li>
 
-  <!-- Quiz question end -->
+        <li>
+          <button type="button" class="answer-button">
+            <div class="answer">
+              D
+            </div>
+            <h2 class="text-paragraph-large-medium">2:1</h2>
+          </button>
+        </li>
+      </ul>
+
+      <button 
+      type="submit" class="answers-submit-button text-paragraph-large-medium">
+      Submit answer
+      </button>
+    </section>
+  </main>
+  
+<script src="./scripts/index.js"></script>
+</body>
+</html>

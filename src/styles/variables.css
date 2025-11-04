@@ -1,19 +1,22 @@
 @import url("./fonts.css");
 
+html{
+    font-size: 62.5%;
+}
+
 :root{
-    font-size: 10px;
     /* === Weights === */
     --font-weight-light: 300;
     --font-weight-regular: 400;
     --font-weight-medium: 500;
 
     /* === Font Sizes === */
-    --fs-heading-large: clamp(8.8rem, 5.258vw + 6.828rem, 14.4rem);
-    --fs-heading-medium: clamp(4rem, 2.254vw + 3.155rem, 6.4rem);
-    --fs-heading-small: clamp(2rem, 1.502vw + 1.437rem, 3.6rem);
-    --fs-paragraph-large: clamp(1.8rem, 0.939vw + 1.448rem, 2.8rem);
+    --fs-heading-large: clamp(8.8rem, 14.249vw + 3.456rem, 14.4rem);
+    --fs-heading-medium: clamp(4rem, 6.107vw + 1.71rem, 6.4rem);
+    --fs-heading-small: clamp(2rem, 4.071vw + 0.473rem, 3.6rem);
+    --fs-paragraph-large: clamp(1.8rem, 2.545vw + 0.846rem, 2.8rem);
     --fs-paragraph-medium: 2.4rem;
-    --fs-paragraph-small: clamp(1.4rem, 0.563vw + 1.189rem, 2rem);
+    --fs-paragraph-small: clamp(1.4rem, 1.527vw + 0.827rem, 2rem);
 
     /* === Spacing  === */
     --spacing-100: 0.8rem;

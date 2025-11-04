@@ -13,7 +13,15 @@ body{
     font-family: "Rubik", sans-serif;
     height: 100dvh;
 
-    transition: background-color .3s linear, color .3s linear, background-image .3s linear;
+    transition: background-color .3s linear, color .3s linear, background-image .3s linear; /* mozna zoptymalizowac zmiane background-image */
+}
+
+/* theme toggle */
+
+
+.night-mode-toggle-container,
+main{
+    padding: 0 var(--spacing-300);
 }
 
 .night-mode-toggle-container{
@@ -23,26 +31,12 @@ body{
     padding: 2.6rem 0;
 }
 
-.night-mode-toggle{
-    align-self: flex-end;
-    padding-right: 2.4rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 0.8rem;
-}
-
-main > *{
-    width: 87vw;
-    margin: 0 auto;
-}
+/* header */
 
 .header-content{
     text-align: left;
-    margin-bottom: var(--spacing-500);
-    margin-top: var(--spacing-400);
+    padding-bottom: var(--spacing-500);
+    padding-top: var(--spacing-400);
 }
 
 .header-content h1{
@@ -60,12 +54,25 @@ main > *{
     transition: color .3s linear;
 }
 
+/* main */
+
 .quiz-menu ul{
     padding: 0;
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: var(--spacing-200);
+}
+
+.icon-container{
+    width: 4rem;
+    height: 4rem;
+    padding: 0.57rem;
+    border-radius: 0.6rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* tablet */
@@ -78,14 +85,32 @@ main > *{
         background-size: cover;
     }
 
+    .night-mode-toggle-container,
+    main{
+        padding: 0 var(--spacing-800);
+    }
+
     .night-mode-toggle-container{
-        padding: 5.4rem 0;
+        padding-top: 5.4rem;
+        padding-bottom: 4.7rem;
     }
 
     .night-mode-toggle{
-        padding-right: 6.4rem;
-
         gap: 1.6rem;
+    }
+
+    .header-content{
+        padding-bottom: var(--spacing-800);
+        padding-top: 0;
+    }
+
+    .icon-container{
+        width: 5.6rem;
+        height: 5.6rem;
+    }
+
+    .quiz-menu ul{
+        gap: var(--spacing-300);
     }
 
 }
@@ -100,29 +125,32 @@ main > *{
         background-size: cover;
     }
 
+    .night-mode-toggle-container,
+    main{
+        padding: 0 14.4rem;
+    }
+
     .night-mode-toggle-container{
         padding-top: 9.7rem;
         padding-bottom: 9.9rem;
     }
 
-    .night-mode-toggle{
-        padding-right: 14.3rem;
-    }
-
     main{
-        width: 80.5%;
-        margin: 0 auto;
-
         display: grid;
         grid-template-columns: 1fr 1fr;
+
+        column-gap: var(--spacing-1600);
     }
 
-    .header-content{
+    .header-content > p{
+        padding-top: var(--spacing-600);
+    }
+
+    .header-content span{
         margin: 0;
     }
 
-    main > *{
-        width: unset;
-        margin: unset;
+    .quiz-menu ul{
+        gap: var(--spacing-200);
     }
 }
