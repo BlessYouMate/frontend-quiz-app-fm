@@ -5,15 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="../public/assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles/question.css">
+
+  <script src="./scripts/theme-load.js"></script>
+
   <title>Question</title>
 </head>
 <body>
   <header>
     <div class="topic-container">
       <div class="icon-container">
-        <img src="../public/assets/images/icon-accessibility.svg">
+        <img class="topic-icon">
       </div>
-      <h2 class="text-paragraph-large-medium">Accessibility</h2>  
+      <h2 class="topic-text text-paragraph-large-medium">Loading quiz...</h2>  
     </div>
       
     <div class="night-mode-toggle">
@@ -29,7 +32,7 @@
         />
       </svg>
       <label class="theme-toggle-label" for="theme-toggle">
-        <input class="theme-toggle-input" type="checkbox" id="theme-toggle" checked>
+        <input class="theme-toggle-input sr-only" type="checkbox" id="theme-toggle" checked>
         <div class="theme-toggle-fill"></div>
       </label>
     
@@ -49,61 +52,86 @@
 
   <main>
     <div class="question-wrapper">
-      <section class="question-text">
-        <p class="text-paragraph-small-italic">Question <span class="question-number">6</span> of 10</p>
-        <h1 class="text-heading-small-medium">Which of these color contrast ratios defines the minimum WCAG 2.1 Level AA requirement for normal text?</h1>
+      <section class="question-text-container">
+        <p class="text-paragraph-small-italic">Question <span class="question-number">Loading...</span></p>
+        <h1 class="question-text text-heading-small-medium">Which of these color contrast ratios defines the minimum WCAG 2.1 Level AA requirement for normal text?</h1>
       </section>
       <div class="progress-bar">
         <div class="progress-bar-fill"></div>
       </div>
     </div>
     
-    <section class="answers-container">
+    <form class="answers-container">
       <ul class="text-paragraph-large-medium">
         <li>
-          <button type="button" class="answer-button">
-            <div class="answer">
+          <input type="radio" id="answer-a" class="answer-input sr-only" name="answer">
+          <label class="answer-button" for="answer-a">
+            <div class="answer-content-wrapper">
+              <div class="answer">
               A
+              </div>
+              <h2 class="answer-text text-paragraph-large-medium">Loading...</h2>
             </div>
-            <h2 class="text-paragraph-large-medium">3:1</h2>
-          </button>
+            <img src="../public/assets/images/icon-correct.svg" class="correct-icon">
+            <img src="../public/assets/images/icon-incorrect.svg" class="incorrect-icon">
+          </label>
         </li>
 
         <li>
-          <button type="button" class="answer-button">
-            <div class="answer">
+          <input type="radio" id="answer-b" class="answer-input sr-only" name="answer">
+          <label class="answer-button" for="answer-b">
+            <div class="answer-content-wrapper">
+              <div class="answer">
               B
+              </div>
+              <h2 class="answer-text text-paragraph-large-medium">Loading...</h2>
             </div>
-            <h2 class="text-paragraph-large-medium">4.5:1</h2>
-          </button>
+            <img src="../public/assets/images/icon-correct.svg" class="correct-icon">
+            <img src="../public/assets/images/icon-incorrect.svg" class="incorrect-icon">
+          </label>
         </li>
 
         <li>
-          <button type="button" class="answer-button">
-            <div class="answer">
+          <input type="radio" id="answer-c" class="answer-input sr-only" name="answer">
+          <label class="answer-button" for="answer-c">
+            <div class="answer-content-wrapper">
+              <div class="answer">
               C
+              </div>
+              <h2 class="answer-text text-paragraph-large-medium">Loading...</h2>
             </div>
-            <h2 class="text-paragraph-large-medium">7:1</h2>
-          </button>
+            <img src="../public/assets/images/icon-correct.svg" class="correct-icon">
+            <img src="../public/assets/images/icon-incorrect.svg" class="incorrect-icon">
+          </label>
         </li>
 
         <li>
-          <button type="button" class="answer-button">
-            <div class="answer">
+          <input type="radio" id="answer-d" class="answer-input sr-only" name="answer">
+          <label class="answer-button" for="answer-d">
+            <div class="answer-content-wrapper">
+              <div class="answer">
               D
+              </div>
+              <h2 class="answer-text text-paragraph-large-medium">Loading...</h2>
             </div>
-            <h2 class="text-paragraph-large-medium">2:1</h2>
-          </button>
+            <img src="../public/assets/images/icon-correct.svg" class="correct-icon">
+            <img src="../public/assets/images/icon-incorrect.svg" class="incorrect-icon">
+          </label>
         </li>
       </ul>
 
       <button 
-      type="submit" class="answers-submit-button text-paragraph-large-medium">
+      type="button" class="submit-answer-button styled-button text-paragraph-large-medium">
       Submit answer
       </button>
-    </section>
+      <div class="error-container">
+        <img src="../public/assets/images/icon-error.svg" class="error-icon">
+        <p class="error-text text-paragraph-medium-regular">Please select an answer</p>
+      </div>
+    </form>
   </main>
   
-<script src="./scripts/index.js"></script>
+<script src="./scripts/theme.js"></script>
+<script src="./scripts/quiz.js"></script>
 </body>
 </html>

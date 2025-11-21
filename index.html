@@ -6,6 +6,9 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./public/assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./src/styles/index.css">
+  <link rel="stylesheet" href="./src/styles/components.css">
+
+  <script src="./src/scripts/theme-load.js"></script>
   
   <title>Frontend Mentor | Frontend quiz app</title>
 </head>
@@ -24,7 +27,7 @@
         />
       </svg>
       <label class="theme-toggle-label" for="theme-toggle">
-        <input class="theme-toggle-input" type="checkbox" id="theme-toggle" checked>
+        <input class="theme-toggle-input sr-only" type="checkbox" id="theme-toggle" checked>
         <div class="theme-toggle-fill"></div>
       </label>
       
@@ -54,7 +57,7 @@
     <section class="quiz-menu">
       <ul>
         <li>
-          <a href="./src/question.html" class="button-with-icon text-paragraph-large-medium">
+          <a href="./src/question.html?title=html" class="button-with-icon text-paragraph-large-medium">
             <div class="icon-container html-icon">
               <img src="./public/assets/images/icon-html.svg">
             </div>
@@ -62,7 +65,7 @@
           </a>
         </li>
         <li>
-          <a href="./src/question.html" class="button-with-icon text-paragraph-large-medium">
+          <a href="./src/question.html?title=css" class="button-with-icon text-paragraph-large-medium">
             <div class="icon-container css-icon">
               <img src="./public/assets/images/icon-css.svg">
             </div>
@@ -70,15 +73,15 @@
           </a>
         </li>
         <li>
-          <a href="./src/question.html" class="button-with-icon text-paragraph-large-medium">
-            <div class="icon-container js-icon">
+          <a href="./src/question.html?title=javascript" class="button-with-icon text-paragraph-large-medium">
+            <div class="icon-container javascript-icon">
               <img src="./public/assets/images/icon-js.svg">
             </div>
             <span>Javascript</span>
           </a>
         </li>
         <li>
-          <a href="./src/question.html" class="button-with-icon text-paragraph-large-medium">
+          <a href="./src/question.html?title=accessibility" class="button-with-icon text-paragraph-large-medium">
             <div class="icon-container accessibility-icon">
               <img src="./public/assets/images/icon-accessibility.svg">
             </div>
@@ -92,6 +95,6 @@
 
   </main>
 
-  <script src="./src/scripts/index.js"></script>
+<script src="./src/scripts/theme.js"></script>
 </body>
 </html>

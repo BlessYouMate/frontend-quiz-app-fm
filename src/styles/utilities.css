@@ -59,3 +59,23 @@
     line-height: 150%;
 }
 
+/* answer styles */
+
+.correct-outline{
+    outline: 3px solid var(--green-500) !important;
+}
+
+.correct-background{
+    background-color: var(--green-500) !important;
+    color: var(--white) !important;
+}
+
+.incorrect-outline{
+    outline: 3px solid var(--red-500) !important;
+}
+
+.incorrect-background{
+    background-color: var(--red-500) !important;
+    color: var(--white) !important;
+}
+

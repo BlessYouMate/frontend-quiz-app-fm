@@ -1,6 +1,6 @@
 /* INDEX PAGE */
 
-body.light-mode{
+html.light-mode body{
     background-image: url("../../public/assets/images/pattern-background-mobile-light.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,12 +10,12 @@ body.light-mode{
 }
 
 
-body.light-mode .header-content p{
+html.light-mode .header-content p{
     color: var(--grey-500);
     transition: color .3s linear;
 }
 
-body.light-mode .button-with-icon{
+html.light-mode .button-with-icon{
     background-color: var(--white);
     color: var(--blue-900);
 }
@@ -25,7 +25,7 @@ body.light-mode .button-with-icon{
 
 @media screen and (min-width: 768px) {
 
-    body.light-mode{
+    html.light-mode body{
         background-image: url("../../public/assets/images/pattern-background-tablet-light.svg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -36,7 +36,7 @@ body.light-mode .button-with-icon{
 
 @media screen and (min-width: 1440px) {
 
-    body.light-mode{
+    html.light-mode body{
         background-image: url("../../public/assets/images/pattern-background-desktop-light.svg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -45,19 +45,28 @@ body.light-mode .button-with-icon{
 
 /* QUESTION PAGE */
 
-body.light-mode .question-text > p{
+html.light-mode .question-text > p{
     color: var(--grey-500);
 }
 
-body.light-mode .progress-bar{
+html.light-mode .progress-bar{
     background-color: var(--white);
 }
 
-body.light-mode .answer-button{
+html.light-mode .answer-button{
     background-color: var(--white);
 }
 
-body.light-mode .answer-button h2{
+html.light-mode .answer-button h2{
    color: var(--black);
 }
 
+/* SCORE PAGE */
+
+html.light-mode .score-container{
+    background-color: var(--white);
+}
+
+html.light-mode .score-subtitle{
+    color: var(--grey-500);
+}
