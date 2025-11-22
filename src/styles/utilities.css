@@ -61,21 +61,21 @@
 
 /* answer styles */
 
-.correct-outline{
-    outline: 3px solid var(--green-500) !important;
+.answer-button.correct-outline{
+    outline: 3px solid var(--green-500);
 }
 
-.correct-background{
-    background-color: var(--green-500) !important;
-    color: var(--white) !important;
+.answer-button .answer.correct-background{
+    background-color: var(--green-500);
+    color: var(--white);
 }
 
-.incorrect-outline{
-    outline: 3px solid var(--red-500) !important;
+.answer-button.incorrect-outline{
+    outline: 3px solid var(--red-500);
 }
 
-.incorrect-background{
-    background-color: var(--red-500) !important;
-    color: var(--white) !important;
+.answer-button .answer.incorrect-background{
+    background-color: var(--red-500);
+    color: var(--white);
 }
 

@@ -49,19 +49,19 @@
     border-radius: 0.6rem;
 }
 
-.html-icon{
+.icon-container.html-icon{
     background-color: var(--orange-50);
 }
 
-.css-icon{
+.icon-container.css-icon{
     background-color: var(--green-100);
 }
 
-.javascript-icon{
+.icon-container.javascript-icon{
     background-color: var(--blue-50);
 }
 
-.accessibility-icon{
+.icon-container.accessibility-icon{
     background-color: var(--purple-100);
 }
 
