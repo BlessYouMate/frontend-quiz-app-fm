@@ -3,6 +3,7 @@
 @import url("./utilities.css");
 @import url("./components.css");
 @import url("./theme.css");
+@import url("./animations.css");
 
 /* general */
 
@@ -97,6 +98,14 @@ header{
     gap: var(--spacing-200);
 }
 
+.answer{
+    flex-shrink: 0;
+}
+
+.answer-text{
+    text-align: left;
+}
+
 .answers-container ul{
     padding: 0;
     list-style: none;
@@ -113,6 +122,16 @@ header{
 .correct-icon,
 .incorrect-icon{
     display: none;
+    
+}
+
+.correct-icon{
+    animation: correct .8s ease-in-out;
+}
+
+.incorrect-icon{
+    animation: wrong .8s ease-in-out;
+    
 }
 
 .error-container{
@@ -120,6 +139,11 @@ header{
     align-self: center;
     gap: var(--spacing-100);
 }
+
+.error-icon{
+    animation: error .5s ease-in-out;
+}
+
 
 /* tablet */
 

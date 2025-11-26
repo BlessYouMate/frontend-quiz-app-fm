@@ -14,7 +14,7 @@
   <header>
     <div class="topic-container">
       <div class="icon-container">
-        <img class="topic-icon">
+        <img class="topic-icon" alt="">
       </div>
       <h2 class="topic-text text-paragraph-large-medium">Loading quiz...</h2>  
     </div>
@@ -32,7 +32,7 @@
         />
       </svg>
       <label class="theme-toggle-label" for="theme-toggle">
-        <input class="theme-toggle-input sr-only" type="checkbox" id="theme-toggle" checked>
+        <input class="theme-toggle-input sr-only" type="checkbox" id="theme-toggle" aria-label="theme-toggle" checked>
         <div class="theme-toggle-fill"></div>
       </label>
     
@@ -64,59 +64,55 @@
     <form class="answers-container">
       <ul class="text-paragraph-large-medium">
         <li>
-          <input type="radio" id="answer-a" class="answer-input sr-only" name="answer">
-          <label class="answer-button" for="answer-a">
+          <button class="answer-button" type="button">
             <div class="answer-content-wrapper">
               <div class="answer">
               A
               </div>
               <h2 class="answer-text text-paragraph-large-medium">Loading...</h2>
             </div>
-            <img src="../public/assets/images/icon-correct.svg" class="correct-icon">
-            <img src="../public/assets/images/icon-incorrect.svg" class="incorrect-icon">
-          </label>
+            <img src="../public/assets/images/icon-correct.svg" class="correct-icon" alt="correct">
+            <img src="../public/assets/images/icon-incorrect.svg" class="incorrect-icon" alt="wrong">
+          </button>
         </li>
 
         <li>
-          <input type="radio" id="answer-b" class="answer-input sr-only" name="answer">
-          <label class="answer-button" for="answer-b">
-            <div class="answer-content-wrapper">
+          <button class="answer-button" type="button">
+             <div class="answer-content-wrapper">
               <div class="answer">
               B
               </div>
               <h2 class="answer-text text-paragraph-large-medium">Loading...</h2>
             </div>
-            <img src="../public/assets/images/icon-correct.svg" class="correct-icon">
-            <img src="../public/assets/images/icon-incorrect.svg" class="incorrect-icon">
-          </label>
+            <img src="../public/assets/images/icon-correct.svg" class="correct-icon" alt="correct">
+            <img src="../public/assets/images/icon-incorrect.svg" class="incorrect-icon" alt="wrong">
+          </button>
         </li>
 
         <li>
-          <input type="radio" id="answer-c" class="answer-input sr-only" name="answer">
-          <label class="answer-button" for="answer-c">
+          <button class="answer-button" type="button">
             <div class="answer-content-wrapper">
               <div class="answer">
               C
               </div>
               <h2 class="answer-text text-paragraph-large-medium">Loading...</h2>
             </div>
-            <img src="../public/assets/images/icon-correct.svg" class="correct-icon">
-            <img src="../public/assets/images/icon-incorrect.svg" class="incorrect-icon">
-          </label>
+            <img src="../public/assets/images/icon-correct.svg" class="correct-icon" alt="correct">
+            <img src="../public/assets/images/icon-incorrect.svg" class="incorrect-icon" alt="wrong">
+          </button>
         </li>
 
         <li>
-          <input type="radio" id="answer-d" class="answer-input sr-only" name="answer">
-          <label class="answer-button" for="answer-d">
+          <button class="answer-button" type="button">
             <div class="answer-content-wrapper">
               <div class="answer">
               D
               </div>
               <h2 class="answer-text text-paragraph-large-medium">Loading...</h2>
             </div>
-            <img src="../public/assets/images/icon-correct.svg" class="correct-icon">
-            <img src="../public/assets/images/icon-incorrect.svg" class="incorrect-icon">
-          </label>
+            <img src="../public/assets/images/icon-correct.svg" class="correct-icon" alt="correct">
+            <img src="../public/assets/images/icon-incorrect.svg" class="incorrect-icon" alt="wrong">
+          </button>
         </li>
       </ul>
 
@@ -125,7 +121,7 @@
       Submit answer
       </button>
       <div class="error-container">
-        <img src="../public/assets/images/icon-error.svg" class="error-icon">
+        <img src="../public/assets/images/icon-error.svg" class="error-icon" alt="error">
         <p class="error-text text-paragraph-medium-regular">Please select an answer</p>
       </div>
     </form>

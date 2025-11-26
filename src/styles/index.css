@@ -3,6 +3,7 @@
 @import url("./utilities.css");
 @import url("./components.css");
 @import url("./theme.css");
+@import url("./animations.css");
 
 body{
     background-color: var(--blue-900);
@@ -14,6 +15,10 @@ body{
     height: 100dvh;
 
     transition: background-color .3s linear, color .3s linear, background-image .3s linear; /* mozna zoptymalizowac zmiane background-image */
+}
+
+body *{
+    animation: slideIn .8s ease-in-out;
 }
 
 /* theme toggle */

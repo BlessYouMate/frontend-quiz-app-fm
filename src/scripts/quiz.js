@@ -52,8 +52,9 @@ let errorContainer = document.querySelector(".error-container");
 
 function handleAnswerButton(e){
     if(!isChecked){
+        let button = e.currentTarget;
         // check the answer
-        let checkedAnswerText = e.currentTarget.querySelector("h2");
+        let checkedAnswerText = button.querySelector("h2");
 
         if(checkedAnswerText.innerText == questions[questionCounter - 1].answer){
             points++;
@@ -61,29 +62,29 @@ function handleAnswerButton(e){
             console.log("points ", points);
 
             // add style to current answer
-            e.currentTarget.classList.add("correct-outline");
-            e.currentTarget.querySelector(".answer").classList.add("correct-background");
+            button.classList.add("correct-outline");
+            button.querySelector(".answer").classList.add("correct-background");
 
-            e.currentTarget.querySelector(".correct-icon").style.display = "block";
+            button.querySelector(".correct-icon").style.display = "block";
         }
         else{
             console.log("Wrong!");
             console.log("points ", points);
 
             // add style to current answer and to correct one
-            e.currentTarget.classList.add("incorrect-outline");
-            e.currentTarget.querySelector(".answer").classList.add("incorrect-background");
+            button.classList.add("incorrect-outline");
+            button.querySelector(".answer").classList.add("incorrect-background");
 
-            e.currentTarget.querySelector(".incorrect-icon").style.display = "block";
-            answerButtons.forEach(button => {
-               if(button.querySelector("h2").innerText == questions[questionCounter - 1].answer){
-                    button.querySelector(".correct-icon").style.display = "block";
+            button.querySelector(".incorrect-icon").style.display = "block";
+            answerButtons.forEach(input => {
+               if(input.querySelector("h2").innerText == questions[questionCounter - 1].answer){
+                    input.querySelector(".correct-icon").style.display = "block";
                }
             });
         }
         isChecked = true;
-        answerButtons.forEach(button => {
-            button.classList.add("disabled");
+        answerButtons.forEach(input => {
+            input.classList.add("disabled");
         });
         errorContainer.style.display = "none";
     }

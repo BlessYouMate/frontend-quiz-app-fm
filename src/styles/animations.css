@@ -1,0 +1,67 @@
+@keyframes slideIn {
+    0% {
+        opacity: 0.2;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes correct {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes wrong {
+    0%{
+        transform: translateX(-20px);
+    }
+    20%{
+        transform: translateX(20px);
+    }
+    40%{
+        transform: translateX(-20px);
+    }
+    60%{
+        transform: translateX(20px);
+    }
+    80%{
+        transform: translateX(-20px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+
+}
+
+@keyframes error {
+    0%{
+        transform: translateX(-8px);
+    }
+    20%{
+        transform: translateX(8px);
+    }
+    40%{
+        transform: translateX(-8px);
+    }
+    60%{
+        transform: translateX(8px);
+    }
+    80%{
+        transform: translateX(-8px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+
+}
+
