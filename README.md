@@ -34,9 +34,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot1.png)
-![](./screenshot2.png)
-![](./screenshot3.png)
+![](./screenshots/screenshot1.png)
+![](./screenshots/screenshot2.png)
+![](./screenshots/screenshot3.png)
 
 ### Links
 
