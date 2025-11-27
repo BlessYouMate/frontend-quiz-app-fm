@@ -16,7 +16,7 @@ body{
     font-family: "Rubik", sans-serif;
     height: 100dvh;
 
-    transition: background-color .3s linear, color .3s linear, background-image .3s linear; /* mozna zoptymalizowac zmiane background-image */
+    transition: background-color .3s linear, color .3s linear, background-image .3s linear; 
 }
 
 header,
